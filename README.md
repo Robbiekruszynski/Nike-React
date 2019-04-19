@@ -1,6 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Friday Build 
+Friday Build
+### Screenshot // Sketch
+* ![application example](src/assets/img/NikeSketch.png)
 
 ## Available Scripts
 
