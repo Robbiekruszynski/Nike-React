@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import TopNav from './TopNav';
-import MidNav from './MidNav';
-import BottomNav from './BottomNav';
 
-
-function Nav() {
+function BottomNav() {
   const Nav = styled.div`
   color:ready
   `;
@@ -17,4 +13,4 @@ function Nav() {
   )
 }
 
-export default Nav;
+export default BottomNav

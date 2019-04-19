@@ -1,10 +1,18 @@
 import React from 'react';
+import styled from 'styled-components';
 
-function(Main) {
+
+function Main() {
+  const Nav = styled.div`
+  color:ready
+  `;
 
   return(
-
+    <Nav>
+    hi
+    </Nav>
   )
 }
 
-export deafult Main;
+
+export default Main;
