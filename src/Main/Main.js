@@ -7,7 +7,6 @@ import LowMain from './LowMain';
 
 function Main() {
   const Main = styled.div`
-  border:1px solid blue;
   `;
 
   return(

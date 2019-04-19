@@ -16,7 +16,6 @@ function LowMain() {
   const Left = styled.div`
   display: flex;
   justify-content: center;
-  border:1px solid blue;
   `;
 
   const Bottom = styled.div`

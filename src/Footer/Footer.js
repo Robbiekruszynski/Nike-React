@@ -7,7 +7,6 @@ import LowFooter from './LowFooter';
 
 function Footer() {
   const Nav = styled.div`
-  border:1px red solid;
   `;
 
   return(

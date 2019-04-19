@@ -9,6 +9,11 @@ https://www.nike.com/ clone using React
 * npx create-react-app webpack creation
 * https://www.styled-components.com/ used for styling
 
+* Styled Components creates the largest separation of working environment between React and Angular.
+
+* React .js files allows for all information (HTML / CSS / JS) to rest on a single file (unless global rules are created on a separate file and called in APP) opposed to Angular which has a similar separation of information, but to a more specific degree that can become cumbersome.
+
+
 ### Original Website
 * ![application example](src/assets/img/ScreenOriginal.gif)
 
@@ -24,9 +29,9 @@ https://www.nike.com/ clone using React
 * copy / paste
 * https://github.com/Robbiekruszynski/Nike-React
 * Make sure you're in your Desktop directory
-* clone or download the following .git https://github.com/Robbiekruszynski/Angular-Nike-.git
-* Open your terminal and navigate to the nike-clone directory
-(cd desktop --cd nike-clone)
+* clone or download the following https://github.com/Robbiekruszynski/Nike-React.git
+* Open your terminal and navigate to the react-nike directory
+(cd desktop --cd react-nike)
 * Once in your terminal and proper directory run the command
 `yarn install` (provided you are free of errors continue and run the next command)
 * In the project directory, you can run:
@@ -42,9 +47,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 * Builds the app for production to the `build` folder.<br>
 * It correctly bundles React in production mode and optimizes the build for the best performance.
 * The build is minified and the filenames include the hashes.<br>
-* Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ## Known Bugs
 _As of April 19th 2019 there are no known bugs_
@@ -55,18 +57,22 @@ _As of April 19th 2019 there are no known bugs_
 * Styled-Components ( https://www.styled-components.com/ )
 * ESlinter
 * React
+
 ## Learn More
-
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-## Further help
+## Notes
+* Get a better grasp on styled components that will allow for similar results to SCSS nesting
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+* Better deployment time with the separation of information and correct pathing // import // export
+
+* Research flexing with styled components, able to implement, but not perfect at the moment
+
 
 #### Developmental Roadmap
 * Continue to build out styled features
+* Push for pixel perfect Navigation bar and Footer
 * Add functionality to Clone
 
 ### License
