@@ -2,14 +2,33 @@ import React from 'react';
 import styled from 'styled-components';
 
 function TopNav() {
-  const Nav = styled.div`
-  color:ready
+  const TopNav = styled.div`
+  color:grey;
+  `;
+
+  const Box = styled.div`
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border:1px solid grey;
+  height:30px;
+  width:250px;
+  `;
+
+  const Button = styled.button`
+  width: 150px;
   `;
 
   return(
-    <Nav>
-    Top Nav
-    </Nav>
+    <div>
+      <Box>
+      <Button>Nikeplus</Button>
+      <Button>Jordan</Button>
+      <Button>Hurley</Button>
+      <Button>Converse</Button>
+
+      </Box>
+    </div>
   )
 }
 

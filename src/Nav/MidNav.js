@@ -6,10 +6,26 @@ function MidNav() {
   color:ready
   `;
 
+  const Box = styled.div`
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border:1px solid grey;
+  height:10px;
+  width:15px:
+  `;
+
   return(
-    <Nav>
-    Mid Nav
-    </Nav>
+    <div>
+      <Nav>
+        <Box>a</Box>
+        <Box>a</Box>
+        <Box>a</Box>
+        <Box>a</Box>
+        <Box>a</Box>
+      Mid Nav
+      </Nav>
+    </div>
   )
 }
 

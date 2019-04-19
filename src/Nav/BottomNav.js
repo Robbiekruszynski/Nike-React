@@ -6,10 +6,23 @@ function BottomNav() {
   color:ready
   `;
 
+  const Box = styled.div`
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border:1px solid grey;
+  height:10px;
+  width: 100vw;
+  `;
+
+
   return(
-    <Nav>
-    Bottom Nav
-    </Nav>
+    <div>
+      <Nav>
+      <Box>a</Box>
+      Bottom Nav
+      </Nav>
+    </div>
   )
 }
 
