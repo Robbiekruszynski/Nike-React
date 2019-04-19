@@ -12,12 +12,16 @@ function MidFooter() {
   justify-content: center;
   `;
 
+  const Img = styled.img`
+  margin-right: 15px
+  `;
+
   return(
     <div>
     <Mid>
-    <img src = { pic }/>
-    <img src = { picTwo }/>
-    <img src = { picThree }/>
+    <Img src = { pic }/>
+    <Img src = { picTwo }/>
+    <Img src = { picThree }/>
     </Mid>
     </div>
   )

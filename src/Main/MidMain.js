@@ -18,12 +18,16 @@ function MidMain() {
   margin-left: 10%;
   `;
 
+  const Img = styled.img`
+  margin-right: 15px
+  `;
+
   return(
     <div>
     <Text>Featured Women's Styles</Text>
     <ImgWork>
-    <img src = {pic}/>
-    <img src = {picTwo}/>
+    <Img src = {pic}/>
+    <Img src = {picTwo}/>
     </ImgWork>
     </div>
   )
