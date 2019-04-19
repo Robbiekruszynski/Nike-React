@@ -2,9 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 function MidNav() {
-  const Nav = styled.div`
-  color:ready
-  `;
 
   const Box = styled.div`
   display:flex;
@@ -17,14 +14,13 @@ function MidNav() {
 
   return(
     <div>
-      <Nav>
+
         <Box>a</Box>
         <Box>a</Box>
         <Box>a</Box>
         <Box>a</Box>
         <Box>a</Box>
       Mid Nav
-      </Nav>
     </div>
   )
 }

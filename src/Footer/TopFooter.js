@@ -5,17 +5,18 @@ import pic from '../assets/img/UpperLowMid.png';
 
 function TopFooter() {
 
-const Top = styled.h1`
-  `;
-
   const Img = styled.div`
   display: flex;
   justify-content: center;
   `;
 
+  const Text = styled.h1`
+  margin-left: 10%;
+  `;
+
   return(
     <div>
-    <Top>Summer Essential</Top>
+    <Text>Summer Essential</Text>
     <Img>
       <img src = { pic }/>
     </Img>
