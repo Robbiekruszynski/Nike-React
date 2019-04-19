@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
-import Main from './Main';
-import Nav from './Nav';
-import Footer from './Footer';
+import Main from './Main/Main';
+import Nav from './Nav/Nav';
+import Footer from './Footer/Footer';
 
 
 
