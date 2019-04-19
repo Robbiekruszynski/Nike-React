@@ -15,9 +15,14 @@ function LowMain() {
 
   const Left = styled.div`
   display: flex;
-  display: column;
   justify-content: center;
   border:1px solid blue;
+  `;
+
+  const Bottom = styled.div`
+  display:flex
+  justify-content: flex-end;
+  margin-right: 18.5vw;
   `;
 
   const Text = styled.h1`
@@ -32,7 +37,9 @@ function LowMain() {
       <img src = { pic } />
       <img src = { picTwo }/>
       </Left>
+      <Bottom>
       <img src = { picThree }/>
+      </Bottom>
 
     </div>
   )

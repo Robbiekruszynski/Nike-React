@@ -1,18 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import pic from '../assets/img/Footer.png';
 
 function LowFooter() {
-  const Nav = styled.div`
-  color:ready
+  const Footer = styled.div`
+  width: 100vw;
+  border:1px solid red;
   `;
 
   return(
-    <Nav>
-    Low Footer
-    </Nav>
+    <Footer>
+      <img src = { pic }/>
+    </Footer>
   )
 }
-
 
 
 export default LowFooter;
