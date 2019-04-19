@@ -7,7 +7,7 @@ import BottomNav from './BottomNav';
 
 function Nav() {
   const Nav = styled.div`
-  border:1px solid green;
+  /* border:1px solid green; */
   `;
 
   return(

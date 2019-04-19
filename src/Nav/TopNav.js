@@ -2,31 +2,43 @@ import React from 'react';
 import styled from 'styled-components';
 
 function TopNav() {
-  const TopNav = styled.div`
-  color:grey;
-  `;
-
   const Box = styled.div`
   display:flex;
   flex-direction: row;
-  justify-content: space-between;
   border:1px solid grey;
   height:30px;
-  width:250px;
+  width:100vw;
   `;
 
-  const Button = styled.button`
-  width: 150px;
+  const LeftSide = styled.button`
+  /* display:flex;
+  flex-direction: row; */
+  justify-content: flex-start;
+  width: 70px;
+  border:1px solid red;
+  `;
+
+  const RightSide = styled.div`
+  display:flex;
+  flex-direction:row;
+  justify-content: flex-end;
+  border: 1px solid black;
+  margin-right: 10px;
   `;
 
   return(
     <div>
       <Box>
-      <Button>Nikeplus</Button>
-      <Button>Jordan</Button>
-      <Button>Hurley</Button>
-      <Button>Converse</Button>
-
+      <LeftSide>Nikeplus</LeftSide>
+      <LeftSide>Jordan</LeftSide>
+      <LeftSide>Hurley</LeftSide>
+      <LeftSide>Converse</LeftSide>
+      <RightSide>
+      <p>Join/Login To NikePlusAccount</p>
+      <p>Help</p>
+      <p>Cart</p>
+      <p>Flag</p>
+      </RightSide>
       </Box>
     </div>
   )
