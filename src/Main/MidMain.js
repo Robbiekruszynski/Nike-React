@@ -8,14 +8,19 @@ function MidMain() {
 
   const ImgWork = styled.div`
   display: flex;
-  flex-direction:
+  flex-direction: row;
+  justify-content: center;
   margin-right: 10px;
   margin-bottom: 8px;
   `;
 
+  const Text = styled.h1`
+  margin-left: 10%;
+  `;
+
   return(
     <div>
-    <h1>Featured Women's Styles</h1>
+    <Text>Featured Women's Styles</Text>
     <ImgWork>
     <img src = {pic}/>
     <img src = {picTwo}/>

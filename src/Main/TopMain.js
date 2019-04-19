@@ -3,13 +3,17 @@ import styled from 'styled-components';
 import pic from '../assets/img/MainBody.png';
 
 function TopMain() {
-  const Nav = styled.div`
-  color:ready
+  const Img = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   `;
 
   return(
     <div>
-    <img src = {pic}/>
+    <Img>
+      <img src = {pic}/>
+    </Img>
     </div>
   )
 }

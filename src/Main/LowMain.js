@@ -13,13 +13,27 @@ function LowMain() {
   margin-bottom: 8px;
   `;
 
+  const Left = styled.div`
+  display: flex;
+  display: column;
+  justify-content: center;
+  border:1px solid blue;
+  `;
+
+  const Text = styled.h1`
+  margin-left: 10%;
+  `;
+
 
   return(
     <div>
-      <h1>Trending Footwear</h1>
+      <Text>Trending Footwear</Text>
+      <Left>
       <img src = { pic } />
-      <img src = {picTwo }/>
-      <img src = {picThree}/>
+      <img src = { picTwo }/>
+      </Left>
+      <img src = { picThree }/>
+
     </div>
   )
 }
