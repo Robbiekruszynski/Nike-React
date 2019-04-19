@@ -15,14 +15,14 @@ function TopNav() {
   flex-direction: row; */
   justify-content: flex-start;
   width: 70px;
-  border:1px solid red;
+  /* border:1px solid red; */
   `;
 
   const RightSide = styled.div`
   display:flex;
   flex-direction:row;
   justify-content: flex-end;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-right: 10px;
   `;
 

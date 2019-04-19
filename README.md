@@ -9,7 +9,10 @@ https://www.nike.com/ clone using React
 * npx create-react-app webpack creation
 * https://www.styled-components.com/ used for styling
 
-Friday Build
+### Original Website
+* ![application example](src/assets/img/ScreenOriginal.gif)
+
+
 ### Screenshot // Sketch
 * ![application example](src/assets/img/NikeSketch.png)
 * ![application example](src/assets/img/NikeReactv2.png)
