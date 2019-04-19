@@ -6,15 +6,15 @@ import LowMain from './LowMain';
 
 
 function Main() {
-  const Nav = styled.div`
-  color:red;
+  const Main = styled.div`
+  border:1px solid blue;
   `;
 
   return(
     <div>
-    <div><TopMain/></div>
-    <div><MidMain/></div>
-    <div><LowMain/></div>
+    <Main><TopMain/></Main>
+    <Main><MidMain/></Main>
+    <Main><LowMain/></Main>
     </div>
   )
 }

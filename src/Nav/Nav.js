@@ -7,14 +7,14 @@ import BottomNav from './BottomNav';
 
 function Nav() {
   const Nav = styled.div`
-  color:red;
+  border:1px solid green;
   `;
 
   return(
     <div>
-    <div><TopNav/></div>
-    <div><MidNav/></div>
-    <div><BottomNav/></div>
+    <Nav><TopNav/></Nav>
+    <Nav><MidNav/></Nav>
+    <Nav><BottomNav/></Nav>
     </div>
   )
 }

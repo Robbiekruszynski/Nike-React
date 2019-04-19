@@ -7,14 +7,14 @@ import LowFooter from './LowFooter';
 
 function Footer() {
   const Nav = styled.div`
-  color:ready
+  border:1px red solid;
   `;
 
   return(
   <div>
-  <div><TopFooter/></div>
-  <div><MidFooter/></div>
-  <div><LowFooter/></div>
+  <Nav><TopFooter/></Nav>
+  <Nav><MidFooter/></Nav>
+  <Nav><LowFooter/></Nav>
   </div>
   )
 }
