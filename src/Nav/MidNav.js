@@ -8,7 +8,7 @@ function MidNav() {
 
   return(
     <Nav>
-    hi
+    Mid Nav
     </Nav>
   )
 }

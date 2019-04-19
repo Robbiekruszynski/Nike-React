@@ -10,16 +10,11 @@ import Footer from './Footer/Footer';
 
 function App(){
 
-  const Hello = styled.div`
-  color:red;
-
-  `;
     return (
       <div>
         <div><Nav/></div>
-        <Hello>
-          <p>hello</p>
-        </Hello>
+        <div><Main/></div>
+        <div><Footer/></div>
       </div>
 
     )

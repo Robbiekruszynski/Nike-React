@@ -1,16 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
+import TopMain from './TopMain';
+import MidMain from './MidMain';
+import LowMain from './LowMain';
 
 
 function Main() {
   const Nav = styled.div`
-  color:ready
+  color:red;
   `;
 
   return(
-    <Nav>
-    hi
-    </Nav>
+    <div>
+    <div><TopMain/></div>
+    <div><MidMain/></div>
+    <div><LowMain/></div>
+    </div>
   )
 }
 

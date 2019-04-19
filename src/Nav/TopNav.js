@@ -8,7 +8,7 @@ function TopNav() {
 
   return(
     <Nav>
-    hi
+    Top Nav
     </Nav>
   )
 }
