@@ -7,9 +7,12 @@ function MidMain() {
   `;
 
   return(
-    <Nav>
-    Mid Main
-    </Nav>
+    <div>
+    <h1>Featured Women's Styles</h1>
+      <Nav>
+      Mid Main
+      </Nav>
+    </div>
   )
 }
 

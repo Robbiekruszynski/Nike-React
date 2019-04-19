@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import pic from '../assets/img/MainBody.png';
 
 function TopMain() {
   const Nav = styled.div`
@@ -7,9 +8,9 @@ function TopMain() {
   `;
 
   return(
-    <Nav>
-    TopMain
-    </Nav>
+    <div>
+    <img src = {pic}/>
+    </div>
   )
 }
 
