@@ -16,16 +16,24 @@ function LowMain() {
   const Left = styled.div`
   display: flex;
   justify-content: center;
+  border: 1px solid green;
   `;
 
+  const Img = styled.img`
+  margin-right: 15px;
+  `;
   const Bottom = styled.div`
   display:flex
-  justify-content: flex-end;
-  margin-right: 18.5vw;
+  justify-content: center;
+
+  margin: auto;
+  width: 100%;
+  border: 1px solid blue;
   `;
 
   const Text = styled.h1`
   margin-left: 10%;
+  border: 1px solid red;
   `;
 
 
@@ -33,13 +41,9 @@ function LowMain() {
     <div>
       <Text>Trending Footwear</Text>
       <Left>
-      <img src = { pic } />
-      <img src = { picTwo }/>
+      <Img src = { pic } />
+      <Img src = { picTwo }/>
       </Left>
-      <Bottom>
-      <img src = { picThree }/>
-      </Bottom>
-
     </div>
   )
 }
