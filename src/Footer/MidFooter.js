@@ -13,16 +13,14 @@ function MidFooter() {
   `;
 
   const Img = styled.img`
-  margin-right: 15px
+  width: 33%;
   `;
 
   return(
     <div>
-    <Mid>
     <Img src = { pic }/>
     <Img src = { picTwo }/>
     <Img src = { picThree }/>
-    </Mid>
     </div>
   )
 }

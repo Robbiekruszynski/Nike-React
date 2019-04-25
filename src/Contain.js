@@ -5,19 +5,18 @@ import './App.css';
 import Main from './Main/Main';
 import Nav from './Nav/Nav';
 import Footer from './Footer/Footer';
-import Contain from './Contain';
 
-
-
-function App(){
+function Contain(){
 
     return (
       <div>
-        <Contain/>
+        <div><Nav/></div>
+        <div><Main/></div>
+        <div><Footer/></div>
       </div>
 
     )
 }
 
 
-export default App;
+export default Contain;

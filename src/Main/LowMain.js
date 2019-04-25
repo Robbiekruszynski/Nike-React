@@ -20,7 +20,7 @@ function LowMain() {
   `;
 
   const Img = styled.img`
-  margin-right: 15px;
+  width: 50vw;
   `;
   const Bottom = styled.div`
   display:flex
@@ -40,10 +40,9 @@ function LowMain() {
   return(
     <div>
       <Text>Trending Footwear</Text>
-      <Left>
       <Img src = { pic } />
       <Img src = { picTwo }/>
-      </Left>
+
     </div>
   )
 }

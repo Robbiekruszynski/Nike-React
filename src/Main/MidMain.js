@@ -16,19 +16,22 @@ function MidMain() {
 
   const Text = styled.h1`
   margin-left: 10%;
+  margin-top: 0px;
+
   `;
 
   const Img = styled.img`
-  margin-right: 15px
+  margin-top: 0px;
+  width: 50vw;
   `;
 
   return(
     <div>
     <Text>Featured Women's Styles</Text>
-    <ImgWork>
+    
     <Img src = {pic}/>
     <Img src = {picTwo}/>
-    </ImgWork>
+
     </div>
   )
 }

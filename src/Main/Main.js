@@ -7,6 +7,8 @@ import LowMain from './LowMain';
 
 function Main() {
   const Main = styled.div`
+  width: 100vw;
+
   `;
 
   return(
