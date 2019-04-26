@@ -13,6 +13,13 @@ https://www.nike.com/ clone using React
 
 * React .js files allows for all information (HTML / CSS / JS) to rest on a single file (unless global rules are created on a separate file and called in APP) opposed to Angular which has a similar separation of information, but to a more specific degree that can become cumbersome.
 
+## Specs
+* User will be able to manipulate the screen size and the information provided will render to that viewport accordingly
+* User will be able to click on NikePlus to receive and extra bonus when shopping!
+* User will be able to click on links in the navigation bar and be directed to the corresponding area on nike
+
+
+
 
 ### Original Website
 * ![application example](src/assets/img/ScreenOriginal.gif)
@@ -24,7 +31,7 @@ https://www.nike.com/ clone using React
 
 
 ### Setup/Installation Requirements
-* As of 04/19/19:
+* As of 04/26/19:
 * Open your preferred browser
 * copy / paste
 * https://github.com/Robbiekruszynski/Nike-React

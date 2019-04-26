@@ -42,7 +42,7 @@ function TopNav(props) {
     <div>
       <Box>
       <LeftSide onClick={props.onTextVisible}>Nikeplus</LeftSide>
-      <LeftSide>Jordan</LeftSide>
+      <LeftSide onClick={props.onTextVisible}>Jordan</LeftSide>
       <LeftSide>Hurley</LeftSide>
       <LeftSide>Converse</LeftSide>
 
