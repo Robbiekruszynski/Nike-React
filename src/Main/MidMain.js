@@ -24,6 +24,7 @@ function MidMain() {
   width: 50vw;
   `;
 
+
   return(
     <div>
     <Text>Featured Women's Styles</Text>
