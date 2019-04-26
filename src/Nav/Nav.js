@@ -27,6 +27,7 @@ export class Nav extends React.Component {
     /* border:1px solid green; */
     `;
 
+
   return (
     <div>
     <Nav><TopNav onTextVisible={this.handleTextVisible}/></Nav>
