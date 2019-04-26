@@ -75,11 +75,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Notes
 * Successfully implemented Routing along with state vs stateless within corresponding paths.  
+* Included several media queries based on viewport 
 
 #### Developmental Roadmap
 * Continue to build out styled features
-* Push for pixel perfect Navigation bar and Footer
-* Add functionality to Clone
 
 ### License
 
