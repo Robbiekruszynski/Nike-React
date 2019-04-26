@@ -9,6 +9,11 @@ function TopNav(props) {
   height:30px;
   width:100vw;
   border-bottom: 1px solid lightgrey;
+  @media only screen and (max-width: 600px){
+    display: flex;
+
+    justify-content: center;
+    }
   `;
 
   const Center = styled.div`
@@ -28,7 +33,7 @@ function TopNav(props) {
   display:flex;
   flex-direction:row;
   justify-content: flex-end;
-  background-color: white;
+
 
   `;
 
@@ -36,6 +41,9 @@ function TopNav(props) {
   display: flex;
   justify-content: flex-end;
   width: 100vw;
+  @media only screen and (max-width: 600px){
+    display:none;
+    }
 
   `;
   return(

@@ -19,6 +19,9 @@ function MidNav(props) {
   margin-right: 15px;
   color: black;
   text-decoration: none;
+  @media only screen and (max-width: 600px){
+    display:none;
+    }
   `;
 
   const Img = styled.img`
