@@ -21,6 +21,10 @@ function BottomNav(props) {
    const Sale = styled.div`
    color:red;
    text-align: center;
+   @media only screen and (max-width: 1000px){
+   background: red;
+   color: white;
+   }
    `;
   let visibleTextTwo = null;
   let visibleText = null;

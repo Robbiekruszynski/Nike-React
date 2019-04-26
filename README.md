@@ -15,7 +15,7 @@ https://www.nike.com/ clone using React
 
 ## Specs
 * User will be able to manipulate the screen size and the information provided will render to that viewport accordingly
-* User will be able to click on NikePlus to receive and extra bonus when shopping!
+* User will be able to click on buttons in the top left of the Navbar to receive and extra bonus when shopping!
 * User will be able to click on links in the navigation bar and be directed to the corresponding area on nike
 
 

@@ -43,8 +43,8 @@ function TopNav(props) {
       <Box>
       <LeftSide onClick={props.onTextVisible}>Nikeplus</LeftSide>
       <LeftSide onClick={props.onTextVisible}>Jordan</LeftSide>
-      <LeftSide>Hurley</LeftSide>
-      <LeftSide>Converse</LeftSide>
+      <LeftSide onClick={props.onTextVisible}>Hurley</LeftSide>
+      <LeftSide onClick={props.onTextVisible}>Converse</LeftSide>
 
       <End>
         <RightSide>Join/Login To NikePlusAccount</RightSide>
