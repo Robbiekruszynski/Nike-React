@@ -13,7 +13,6 @@ function MidNav(props) {
   margin-right: 15px;
   height:40px;
   width:15px:
-  border:1px solid yellow;
   `;
 
   const Tag = styled.a`

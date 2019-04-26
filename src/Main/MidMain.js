@@ -15,7 +15,6 @@ function MidMain() {
   `;
 
   const Text = styled.h1`
-  margin-left: 10%;
   margin-top: 0px;
 
   `;
@@ -28,7 +27,7 @@ function MidMain() {
   return(
     <div>
     <Text>Featured Women's Styles</Text>
-    
+
     <Img src = {pic}/>
     <Img src = {picTwo}/>
 

@@ -31,8 +31,6 @@ function LowMain() {
   `;
 
   const Text = styled.h1`
-  margin-left: 10%;
-  border: 1px solid red;
   `;
 
 

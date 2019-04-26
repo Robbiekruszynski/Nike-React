@@ -11,7 +11,6 @@ function BottomNav(props) {
   background-color: lightgrey;
   height:40px;
   width: 100vw;
-  color:blue;
   `;
 
   const Text = styled.h4`

@@ -10,7 +10,6 @@ function TopFooter() {
   `;
 
   const Text = styled.h1`
-  margin-left: 10%;
   `;
 
   return(

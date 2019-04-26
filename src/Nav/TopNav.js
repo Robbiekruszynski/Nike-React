@@ -11,11 +11,16 @@ function TopNav(props) {
   border-bottom: 1px solid lightgrey;
   `;
 
+  const Center = styled.div`
+  display: flex;
+  justify-content: center;
+  `;
+
   const LeftSide = styled.button`
   display:flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 70px;
+  width: 100px;
   background-color: white;
   `;
 
