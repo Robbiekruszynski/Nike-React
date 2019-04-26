@@ -30,8 +30,8 @@ export class Nav extends React.Component {
   return (
     <div>
     <Nav><TopNav onTextVisible={this.handleTextVisible}/></Nav>
-    <Nav><MidNav onTextVisible={this.state.textVisibleOnPage}/></Nav>
-    <Nav><BottomNav/></Nav>
+    <Nav><MidNav/></Nav>
+    <Nav><BottomNav onTextVisible={this.state.textVisibleOnPage}/></Nav>
     </div>
     )
   }

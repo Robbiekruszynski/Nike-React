@@ -29,19 +29,10 @@ function MidNav(props) {
   height:25px;
   `;
 
-  let visibleText = null;
-    if (props.onTextVisible) {
-      visibleText = <h3> I want this to appear only when the button is clicked</h3>;
-    } else {
-      visibleText = null;
-    }
-
-
   return(
     <div>
       <Box>
       <Img src = { pic }/>
-      {visibleText}
       <Tag href="https://www.nike.com/us/en_us/c/men"><div>NEW RELEASES</div></Tag>
       <Tag href="https://www.nike.com/us/en_us/c/men"><div>MEN</div></Tag>
       <Tag href="https://www.nike.com/us/en_us/c/women"><div>WOMEN</div></Tag>
@@ -50,9 +41,9 @@ function MidNav(props) {
         <form>
           <input placeholder = "Search" id="text"></input>
         </form>
-          {visibleText}
+
       </Box>
-        {visibleText}
+
     </div>
   )
 
