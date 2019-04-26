@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import pic from '../assets/img/MidLeft.png';
-import picTwo from '../assets/img/MidUpper.png';
-import picThree from '../assets/img/MidLower.png';
+import pic from '../assets/img/bred.png';
+
 
 function LowMain() {
 
@@ -20,7 +19,7 @@ function LowMain() {
   `;
 
   const Img = styled.img`
-  width: 50vw;
+  width: 100vw;
   `;
   const Bottom = styled.div`
   display:flex
@@ -41,8 +40,6 @@ function LowMain() {
     <div>
       <Text>Trending Footwear</Text>
       <Img src = { pic } />
-      <Img src = { picTwo }/>
-
     </div>
   )
 }

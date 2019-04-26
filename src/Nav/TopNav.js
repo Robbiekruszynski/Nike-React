@@ -22,13 +22,11 @@ function TopNav() {
   flex-direction:row;
   justify-content: flex-end;
   border: 1px solid blue;
-  margin-right: 10px;
   `;
 
   const End = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-left: 500px;
   width: 100vw;
 
   `;

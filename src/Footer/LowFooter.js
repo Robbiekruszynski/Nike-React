@@ -3,15 +3,8 @@ import styled from 'styled-components';
 import pic from '../assets/img/Footer.png';
 
 function LowFooter() {
-  const Footer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100vw;
-  `;
-
   const FootImg = styled.img`
-  width: 100%;
+  width: 100vw;
   `;
 
   const Words = styled.div`
@@ -25,6 +18,12 @@ function LowFooter() {
   display: flex;
   `;
 
+  const A = styled.a`
+  text-decoration:none;
+  color: grey;
+
+  `;
+
   const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -35,36 +34,34 @@ function LowFooter() {
       <Words>
       <Wrapper>
         <h4>Icons</h4>
-        <Group><a href="https://nike.com">Air Froce 1</a></Group>
-        <Group><a href="https://nike.com">Air Max 97</a></Group>
-        <Group><a href="https://nike.com">Huarache</a></Group>
-        <Group><a href="https://nike.com">VaporMax</a></Group>
+        <Group><A href="https://nike.com">Air Froce 1</A></Group>
+        <Group><A href="https://nike.com">Air Max 97</A></Group>
+        <Group><A href="https://nike.com">Huarache</A></Group>
+        <Group><A href="https://nike.com">VaporMax</A></Group>
       </Wrapper>
       <Wrapper>
         <h4>Shoes</h4>
-        <Group><a href="https://nike.com">Jordan Shoes</a></Group>
-        <Group><a href="https://nike.com">Running Shoes</a></Group>
-        <Group><a href="https://nike.com">Sneakers</a></Group>
-        <Group><a href="https://nike.com">Soccor Cleats</a></Group>
+        <Group><A href="https://nike.com">Jordan Shoes</A></Group>
+        <Group><A href="https://nike.com">Running Shoes</A></Group>
+        <Group><A href="https://nike.com">Sneakers</A></Group>
+        <Group><A href="https://nike.com">Soccor Cleats</A></Group>
       </Wrapper>
       <Wrapper>
         <h4>Kids</h4>
-        <p><a href="https://nike.com">Kids Shoes</a></p>
-        <p><a href="https://nike.com">Kids Jordan Shoes</a></p>
-        <p><a href="https://nike.com">Kids Backpacks</a></p>
-        <p><a href="https://nike.com">Kids Socks</a></p>
+        <p><A href="https://nike.com">Kids Shoes</A></p>
+        <p><A href="https://nike.com">Kids Jordan Shoes</A></p>
+        <p><A href="https://nike.com">Kids Backpacks</A></p>
+        <p><A href="https://nike.com">Kids Socks</A></p>
       </Wrapper>
       <Wrapper>
         <h4>Featured</h4>
-        <p><a href="https://nike.com">Leggings</a></p>
-        <p><a href="https://nike.com">Jordan Retro</a></p>
-        <p><a href="https://nike.com">Windbreakers</a></p>
-        <p><a href="https://nike.com">Tracksuits</a></p>
+        <p><A href="https://nike.com">Leggings</A></p>
+        <p><A href="https://nike.com">Jordan Retro</A></p>
+        <p><A href="https://nike.com">Windbreakers</A></p>
+        <p><A href="https://nike.com">Tracksuits</A></p>
       </Wrapper>
     </Words>
-    <Footer>
       <FootImg src = { pic }/>
-    </Footer>
   </div>
   )
 }
