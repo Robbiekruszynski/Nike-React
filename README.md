@@ -30,7 +30,7 @@ https://www.nike.com/ clone using React
 * ![application example](src/assets/img/NikeReactv2.png)
 
 ### Screenshot // Sketch with State
-* ![application example](src/assets/img/SketchWithState.png)
+* ![application example](src/assets/img/sketchWithState.png)
 
 
 
@@ -74,12 +74,7 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Notes
-* Get a better grasp on styled components that will allow for similar results to SCSS nesting
-
-* Better deployment time with the separation of information and correct pathing // import // export
-
-* Research flexing with styled components, able to implement, but not perfect at the moment
-
+* Successfully implemented Routing along with state vs stateless within corresponding paths.  
 
 #### Developmental Roadmap
 * Continue to build out styled features
