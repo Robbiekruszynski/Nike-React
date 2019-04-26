@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import styled from 'styled-components';
 import logo from './logo.svg';
 import './App.css';
@@ -13,7 +14,9 @@ function App(){
 
     return (
       <div>
-        <Contain/>
+        <Switch>
+          <Route exact path = '/' component = { Contain }/>
+        </Switch>
       </div>
 
     )
