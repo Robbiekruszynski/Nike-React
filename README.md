@@ -49,7 +49,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 * The build is minified and the filenames include the hashes.<br>
 
 ## Known Bugs
-_As of April 19th 2019 there are no known bugs_
+_As of April 26th 2019 there are no known bugs_
 
 
 ## List of Technologies Resources
