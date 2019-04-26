@@ -22,12 +22,15 @@ function BottomNav(props) {
    color:red;
    text-align: center;
    `;
-
+  let visibleTextTwo = null;
   let visibleText = null;
     if (props.onTextVisible) {
       visibleText = <h3> Secret find! take an EXTRA 35% off</h3>;
+      visibleTextTwo = <h3> You know what!? How about an EXTRA 45% off</h3>;
+
     } else {
       visibleText = null;
+      visibleTextTwo = null;
     }
 
 
@@ -39,6 +42,7 @@ function BottomNav(props) {
     </Box>
     <Sale>
       {visibleText}
+      {visibleTextTwo}
     </Sale>
 
     </div>
