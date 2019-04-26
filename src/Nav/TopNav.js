@@ -44,7 +44,9 @@ function TopNav() {
         <RightSide>Cart</RightSide>
         <RightSide>Flag</RightSide>
       </End>
-
+      <form>
+        <input placeholder = "Search" id="text"></input>
+      </form>
       </Box>
     </div>
   )

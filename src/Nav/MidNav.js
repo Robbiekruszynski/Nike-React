@@ -6,7 +6,7 @@ function MidNav() {
 
   const Box = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   margin-right: 15px;
   height:40px;
@@ -37,8 +37,9 @@ function MidNav() {
       <Tag href="https://www.nike.com/us/en_us/c/women"><div>WOMEN</div></Tag>
       <Tag href="https://www.nike.com/us/en_us/c/kids"><div>KIDS</div></Tag>
       <Tag href="https://www.nike.com/us/en_us/c/nikeid"><div>CUSTOMIZE</div></Tag>
-      <Img src = { pic }/>
-
+        <form>
+          <input placeholder = "Search" id="text"></input>
+        </form>
       </Box>
     </div>
   )
