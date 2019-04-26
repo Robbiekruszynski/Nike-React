@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import pic from '../assets/img/swoosh.png';
+import PropTypes from 'prop-types';
 
-function MidNav() {
+
+function MidNav(props) {
 
   const Box = styled.div`
   display: flex;
@@ -27,11 +29,19 @@ function MidNav() {
   height:25px;
   `;
 
+  let visibleText = null;
+    if (props.onTextVisible) {
+      visibleText = <h3> I want this to appear only when the button is clicked</h3>;
+    } else {
+      visibleText = null;
+    }
+
 
   return(
     <div>
       <Box>
       <Img src = { pic }/>
+      {visibleText}
       <Tag href="https://www.nike.com/us/en_us/c/men"><div>NEW RELEASES</div></Tag>
       <Tag href="https://www.nike.com/us/en_us/c/men"><div>MEN</div></Tag>
       <Tag href="https://www.nike.com/us/en_us/c/women"><div>WOMEN</div></Tag>
@@ -40,10 +50,16 @@ function MidNav() {
         <form>
           <input placeholder = "Search" id="text"></input>
         </form>
+          {visibleText}
       </Box>
+        {visibleText}
     </div>
   )
+
 }
+MidNav.propTypes = {
+  onTextVisible: PropTypes.bool
+};
 
 
 export default MidNav
