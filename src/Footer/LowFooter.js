@@ -5,6 +5,9 @@ import pic from '../assets/img/Footer.png';
 function LowFooter() {
   const FootImg = styled.img`
   width: 100vw;
+  @media only screen and (max-width: 600px){
+  display none;
+  }
   `;
 
   const Words = styled.div`
@@ -12,6 +15,17 @@ function LowFooter() {
   flex-direction: row;
   justify-content: space-around;
   width: 100vw;
+
+  @media only screen and (max-width: 1000px){
+  background: red;
+  a{
+    color: white;
+  }
+  border: 1px red solid;
+  }
+  @media only screen and (max-width:600px){
+    display:none;
+  }
   `;
 
   const Group = styled.p`
