@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-
 function TopNav(props) {
   const Box = styled.div`
   display:flex;
@@ -55,7 +54,7 @@ function TopNav(props) {
       <LeftSide onClick={props.onTextVisible}>Converse</LeftSide>
 
       <End>
-        <RightSide>Join/Login To NikePlusAccount</RightSide>
+        <RightSide onClick = {props.admin}>Join/Login To NikePlusAccount</RightSide>
         <RightSide>Help </RightSide>
         <RightSide>Cart</RightSide>
         <RightSide>Flag</RightSide>

@@ -11,28 +11,32 @@ export class Nav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      textVisibleOnPage: false
+      userName: null,
+      userEmail: null,
+
     };
     this.handleTextVisible = this.handleTextVisible.bind(this);
+    // this.handleUserName = this.handleUserName.bind(this);
+    // this.handleUserEmail = this.handleUserEmail.bind(this);
+
   }
 
   handleTextVisible() {
-    this.setState( prevState => ({
-      textVisibleOnPage: !prevState.textVisibleOnPage
-    }));
+    this.props.changeVisibility();
+
   }
 
   render(){
-    const Nav = styled.div`
+    const NavStyle = styled.div`
     /* border:1px solid green; */
     `;
 
 
   return (
     <div>
-    <Nav><TopNav onTextVisible={this.handleTextVisible}/></Nav>
-    <Nav><MidNav/></Nav>
-    <Nav><BottomNav onTextVisible={this.state.textVisibleOnPage}/></Nav>
+    <NavStyle><TopNav onTextVisible={this.handleTextVisible}/></NavStyle>
+    <NavStyle><MidNav/></NavStyle>
+    <NavStyle><BottomNav onTextVisible={this.props.textVisibleOnPage}/></NavStyle>
     </div>
     )
   }

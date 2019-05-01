@@ -4,7 +4,7 @@ import pic from '../assets/img/TopLeft.png';
 import picTwo from '../assets/img/TopRight.png';
 
 
-function MidMain() {
+function MidMain(props) {
 
   const ImgWork = styled.div`
   display: flex;
@@ -27,7 +27,7 @@ function MidMain() {
 
   return(
     <div>
-    <Text>Featured Women's Styles</Text>
+    <Text onClick={props.onTextVisible}>Featured Women's Styles</Text>
 
     <Img src = {pic}/>
     <Img src = {picTwo}/>

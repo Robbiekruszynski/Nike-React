@@ -48,7 +48,7 @@ function LowFooter() {
       <Words>
       <Wrapper>
         <h4>Icons</h4>
-        <Group><A href="https://nike.com">Air Froce 1</A></Group>
+        <Group><A href="https://nike.com">Air Force 1</A></Group>
         <Group><A href="https://nike.com">Air Max 97</A></Group>
         <Group><A href="https://nike.com">Huarache</A></Group>
         <Group><A href="https://nike.com">VaporMax</A></Group>

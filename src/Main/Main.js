@@ -5,19 +5,24 @@ import MidMain from './MidMain';
 import LowMain from './LowMain';
 
 
-export
-
-function Main() {
-  const Main = styled.div`
+function Main(props) {
+  const MainStyle = styled.div`
   width: 100vw;
 
   `;
+  console.log(props);
+
+  function handleTextVisible() {
+    console.log(props);
+    props.changeVisibility();
+
+  }
 
   return(
     <div>
-    <Main><TopMain/></Main>
-    <Main><MidMain/></Main>
-    <Main><LowMain/></Main>
+    <MainStyle><TopMain/></MainStyle>
+    <MainStyle><MidMain/></MainStyle>
+    <MainStyle><LowMain/></MainStyle>
     </div>
   )
 }

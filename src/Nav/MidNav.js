@@ -4,6 +4,7 @@ import pic from '../assets/img/swoosh.png';
 import PropTypes from 'prop-types';
 
 
+
 function MidNav(props) {
 
   const Box = styled.div`
