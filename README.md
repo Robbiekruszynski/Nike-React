@@ -14,6 +14,7 @@ https://www.nike.com/ clone using React
 * React .js files allows for all information (HTML / CSS / JS) to rest on a single file (unless global rules are created on a separate file and called in APP) opposed to Angular which has a similar separation of information, but to a more specific degree that can become cumbersome.
 
 ## Specs
+* User will enter "sale" for the password which prompts a field for your name. After entering the name clicking on NikePlus / Jordan / Hurley / Converse will trigger an extra % of sale with your name. Else it would show 30%
 * User will be able to manipulate the screen size and the information provided will render to that viewport accordingly
 * User will be able to click on buttons in the top left of the Navbar to receive and extra bonus when shopping!
 * User will be able to click on links in the navigation bar and be directed to the corresponding area on nike
