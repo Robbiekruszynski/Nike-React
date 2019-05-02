@@ -1,8 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
+import Form from "./Form";
+import SecurityQuestion from "./SecurityQuestion";
 
-function TopNav(props) {
+class TopNav extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      Form: false
+    };
+    this.checkPassword = this.checkPassword.bind(this);
+  }
+
+  checkPassword(input){
+    if(input.password === "sale"){
+      this.setState({
+        Form: true
+      })
+    } else {
+      console.log("try again")
+    }
+  }
+
+  render(){
+    let currentState = null;
+    if(this.state.Form){
+      currentState = <Form sendFormInfo={this.props.sendForm}/>
+    } else {
+      currentState = <SecurityQuestion sendPassword ={this.checkPassword}/>;
+    }
   const Box = styled.div`
   display:flex;
   height:30px;
@@ -32,8 +59,6 @@ function TopNav(props) {
   display:flex;
   flex-direction:row;
   justify-content: flex-end;
-
-
   `;
 
   const End = styled.div`
@@ -43,18 +68,18 @@ function TopNav(props) {
   @media only screen and (max-width: 600px){
     display:none;
     }
-
   `;
   return(
     <div>
+      {currentState}
       <Box>
-      <LeftSide onClick={props.onTextVisible}>Nikeplus</LeftSide>
-      <LeftSide onClick={props.onTextVisible}>Jordan</LeftSide>
-      <LeftSide onClick={props.onTextVisible}>Hurley</LeftSide>
-      <LeftSide onClick={props.onTextVisible}>Converse</LeftSide>
+      <LeftSide onClick={this.props.onTextVisible}>Nikeplus</LeftSide>
+      <LeftSide onClick={this.props.onTextVisible}>Jordan</LeftSide>
+      <LeftSide onClick={this.props.onTextVisible}>Hurley</LeftSide>
+      <LeftSide onClick={this.props.onTextVisible}>Converse</LeftSide>
 
       <End>
-        <RightSide onClick = {props.admin}>Join/Login To NikePlusAccount</RightSide>
+        <RightSide onClick ={this.props.Form}>Join/Login To NikePlusAccount</RightSide>
         <RightSide>Help </RightSide>
         <RightSide>Cart</RightSide>
         <RightSide>Flag</RightSide>
@@ -62,11 +87,11 @@ function TopNav(props) {
 
       </Box>
     </div>
-  )
+    );
+  }
 }
-
 TopNav.propTypes = {
-  onTextVisible:PropTypes.func
-};
+  sendForm: PropTypes.func
+}
 
 export default TopNav

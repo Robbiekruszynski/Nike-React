@@ -10,7 +10,6 @@ function Main(props) {
   width: 100vw;
 
   `;
-  console.log(props);
 
   function handleTextVisible() {
     console.log(props);

@@ -4,26 +4,31 @@ import TopNav from './TopNav';
 import MidNav from './MidNav';
 import BottomNav from './BottomNav';
 import PropTypes from 'prop-types';
+import Form from "./Form";
 
 
 export class Nav extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
-      userName: null,
-      userEmail: null,
+      sale: []
 
     };
     this.handleTextVisible = this.handleTextVisible.bind(this);
-    // this.handleUserName = this.handleUserName.bind(this);
-    // this.handleUserEmail = this.handleUserEmail.bind(this);
+    this.test = this.test.bind(this);
 
   }
 
   handleTextVisible() {
     this.props.changeVisibility();
 
+  }
+
+  test(props){
+    let newSale = this.state.sale.slice();
+    newSale.push(props);
+    this.setState({sale: newSale})
+    console.log(this.state.sale);
   }
 
   render(){
@@ -34,9 +39,9 @@ export class Nav extends React.Component {
 
   return (
     <div>
-    <NavStyle><TopNav onTextVisible={this.handleTextVisible}/></NavStyle>
+    <NavStyle><TopNav onTextVisible={this.handleTextVisible} sendForm = {this.test}/></NavStyle>
     <NavStyle><MidNav/></NavStyle>
-    <NavStyle><BottomNav onTextVisible={this.props.textVisibleOnPage}/></NavStyle>
+    <NavStyle><BottomNav newSale = {this.state.sale} onTextVisible={this.props.textVisibleOnPage}/></NavStyle>
     </div>
     )
   }

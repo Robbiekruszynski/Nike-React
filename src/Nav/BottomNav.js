@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 
 
 function BottomNav(props) {
-
   const Box = styled.div`
   display:flex;
   flex-direction: row;
@@ -30,9 +29,12 @@ function BottomNav(props) {
   let visibleTextTwo = null;
   let visibleText = null;
     if (props.onTextVisible) {
-      visibleText = <h3> Secret find! take an EXTRA 35% off</h3>;
-      visibleTextTwo = <h3> You know what!? How about an EXTRA 45% off</h3>;
+      if (props.newSale[0]){
+        visibleText = <h3> {props.newSale[0].name} How about an EXTRA 45% off</h3>;
+      } else {
+        visibleText = <h3> You know what!? How about an EXTRA 30% off</h3>;
 
+      }
     } else {
       visibleText = null;
       visibleTextTwo = null;
@@ -49,13 +51,13 @@ function BottomNav(props) {
       {visibleText}
       {visibleTextTwo}
     </Sale>
-
     </div>
   )
 }
 
 BottomNav.propTypes = {
-  onTextVisible: PropTypes.bool
+  onTextVisible: PropTypes.bool,
+  newSale:PropTypes.array
 };
 
 export default BottomNav
