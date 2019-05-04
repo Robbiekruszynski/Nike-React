@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
-
+import { v4 } from 'uuid';
 
 
 function Form (props) {
@@ -9,7 +9,8 @@ function Form (props) {
   function submitForm(event) {
     event.preventDefault();
     props.sendFormInfo ({
-      name: _name.value,
+      name:_name.value,
+      id: v4()
     });
     _name.value = ' '
   }

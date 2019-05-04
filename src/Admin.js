@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import SecurityQuestion from "./Nav/SecurityQuestion";
 import Form from "./Nav/Form";
+import InfoList from './InfoList';
+import Info from './Info';
 
 class Admin extends React.Component {
   constructor(props){

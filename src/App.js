@@ -8,7 +8,7 @@ import Nav from './Nav/Nav';
 import Footer from './Footer/Footer';
 import Contain from './Contain';
 import Admin from './Admin';
-
+import InfoList from './InfoList';
 
 
 class App extends React.Component{
@@ -31,7 +31,7 @@ class App extends React.Component{
         <Switch>
           <Route exact path = '/' component = { Contain }/>
           <Route path = '/admin' render={()=><Admin sendForm={this.test}/>}/>
-
+          <Route path = '/info' render = {()=><InfoList infoList={this.state.sale}/>}/>
         </Switch>
       </div>
 
