@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 
 function Form (props) {
   let _name = null;
-  let _sale = null;
   function submitForm(event) {
     event.preventDefault();
     props.sendFormInfo ({
@@ -16,11 +15,11 @@ function Form (props) {
   }
   return (
     <div>
-      <form onSubmit = {submitForm}>
+      <form onSubmit={submitForm}>
       <input
       type = 'text'
       id = 'name'
-      placeholder = 'Your Name'
+      placeholder= 'Your Name'
       ref={(input) => {_name = input;}}/>
 
       <button type="submit">Submit</button>

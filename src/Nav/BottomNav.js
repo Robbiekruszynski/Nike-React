@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 
 function BottomNav(props) {
+  console.log(props)
   const Box = styled.div`
   display:flex;
   flex-direction: row;
@@ -56,7 +57,6 @@ function BottomNav(props) {
 }
 
 BottomNav.propTypes = {
-  onTextVisible: PropTypes.bool,
   newSale:PropTypes.array
 };
 

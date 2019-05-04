@@ -7,19 +7,36 @@ import Main from './Main/Main';
 import Nav from './Nav/Nav';
 import Footer from './Footer/Footer';
 import Contain from './Contain';
+import Admin from './Admin';
 
 
 
-function App(){
-
+class App extends React.Component{
+  constructor(props){
+    super(props)
+    this.state = {
+      sale: [],
+    }
+    this.test = this.test.bind(this)
+  }
+  test(props){
+    let newSale = this.state.sale.slice();
+    newSale.push(props);
+    this.setState({sale: newSale})
+  }
+  render(){
     return (
       <div>
+        <div><Nav sale={this.state.sale} changeVisibility={this.handleVisibility} textVisibleOnPage={this.state.textVisibleOnPage}/></div>
         <Switch>
           <Route exact path = '/' component = { Contain }/>
+          <Route path = '/admin' render={()=><Admin sendForm={this.test}/>}/>
+
         </Switch>
       </div>
 
     )
+  }
 }
 
 

@@ -5,30 +5,23 @@ import MidNav from './MidNav';
 import BottomNav from './BottomNav';
 import PropTypes from 'prop-types';
 import Form from "./Form";
+import Admin from '../Admin';
 
 
 export class Nav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      sales: false,
       sale: []
-
     };
     this.handleTextVisible = this.handleTextVisible.bind(this);
-    this.test = this.test.bind(this);
-
   }
 
   handleTextVisible() {
-    this.props.changeVisibility();
-
-  }
-
-  test(props){
-    let newSale = this.state.sale.slice();
-    newSale.push(props);
-    this.setState({sale: newSale})
-    console.log(this.state.sale);
+    this.setState( prevState => ({
+      sales: !prevState.sales
+    }));
   }
 
   render(){
@@ -39,16 +32,16 @@ export class Nav extends React.Component {
 
   return (
     <div>
-    <NavStyle><TopNav onTextVisible={this.handleTextVisible} sendForm = {this.test}/></NavStyle>
+    <NavStyle><TopNav onTextVisible={this.handleTextVisible} /></NavStyle>
     <NavStyle><MidNav/></NavStyle>
-    <NavStyle><BottomNav newSale = {this.state.sale} onTextVisible={this.props.textVisibleOnPage}/></NavStyle>
+    <NavStyle><BottomNav newSale = {this.props.sale} onTextVisible={this.state.sales}/></NavStyle>
     </div>
     )
   }
 }
 
 Nav.propTypes = {
-  onTextVisible:PropTypes.bool
+  sale: PropTypes.array
 };
 
 export default Nav;

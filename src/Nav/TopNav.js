@@ -3,33 +3,15 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import Form from "./Form";
 import SecurityQuestion from "./SecurityQuestion";
+import {Link} from "react-router-dom";
 
 class TopNav extends React.Component {
   constructor(props){
     super(props);
-    this.state = {
-      Form: false
-    };
-    this.checkPassword = this.checkPassword.bind(this);
-  }
-
-  checkPassword(input){
-    if(input.password === "sale"){
-      this.setState({
-        Form: true
-      })
-    } else {
-      console.log("try again")
-    }
   }
 
   render(){
-    let currentState = null;
-    if(this.state.Form){
-      currentState = <Form sendFormInfo={this.props.sendForm}/>
-    } else {
-      currentState = <SecurityQuestion sendPassword ={this.checkPassword}/>;
-    }
+
   const Box = styled.div`
   display:flex;
   height:30px;
@@ -71,12 +53,13 @@ class TopNav extends React.Component {
   `;
   return(
     <div>
-      {currentState}
       <Box>
       <LeftSide onClick={this.props.onTextVisible}>Nikeplus</LeftSide>
       <LeftSide onClick={this.props.onTextVisible}>Jordan</LeftSide>
       <LeftSide onClick={this.props.onTextVisible}>Hurley</LeftSide>
       <LeftSide onClick={this.props.onTextVisible}>Converse</LeftSide>
+      <Link to='/admin'>Admin</Link>
+
 
       <End>
         <RightSide onClick ={this.props.Form}>Join/Login To NikePlusAccount</RightSide>
@@ -89,9 +72,6 @@ class TopNav extends React.Component {
     </div>
     );
   }
-}
-TopNav.propTypes = {
-  sendForm: PropTypes.func
 }
 
 export default TopNav
