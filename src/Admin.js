@@ -31,6 +31,7 @@ class Admin extends React.Component {
     return(
       <div>
       {currentState}
+      <InfoList infoList={this.props.infoList} removeName={this.props.removeName}/>
       </div>
     )
   }

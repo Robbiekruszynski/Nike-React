@@ -5,11 +5,10 @@ import PropTypes from 'prop-types';
 
 
 function InfoList(props) {
-console.log(props)
 
   return(
     <div>
-    {props.infoList.map((info) => <Info name={info.name} key={info.id}/>)}
+    {props.infoList.map((info) => <Info name={info.name} removeName = {props.removeName} id ={info.id} key={info.id}/>)}
     </div>
   )
 }

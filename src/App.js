@@ -8,7 +8,7 @@ import Nav from './Nav/Nav';
 import Footer from './Footer/Footer';
 import Contain from './Contain';
 import Admin from './Admin';
-import InfoList from './InfoList';
+import InfoList from './InfoList'
 
 
 class App extends React.Component{
@@ -18,20 +18,32 @@ class App extends React.Component{
       sale: [],
     }
     this.test = this.test.bind(this)
+    this.removeName = this.removeName.bind(this)
   }
   test(props){
     let newSale = this.state.sale.slice();
     newSale.push(props);
     this.setState({sale: newSale})
   }
+
+  removeName(props){
+    let saleArray = this.state.sale
+    for ( let i = 0; i < saleArray.length; i++)
+    {
+    if (props.id === saleArray[i].id){
+      saleArray.splice(i,1)
+    }
+    }
+    this.setState({sale: saleArray})
+  }
+
   render(){
     return (
       <div>
         <div><Nav sale={this.state.sale} changeVisibility={this.handleVisibility} textVisibleOnPage={this.state.textVisibleOnPage}/></div>
         <Switch>
           <Route exact path = '/' component = { Contain }/>
-          <Route path = '/admin' render={()=><Admin sendForm={this.test}/>}/>
-          <Route path = '/info' render = {()=><InfoList infoList={this.state.sale}/>}/>
+          <Route path = '/admin' render={()=><Admin sendForm={this.test} infoList={this.state.sale} removeName={this.removeName}/>}/>
         </Switch>
       </div>
 

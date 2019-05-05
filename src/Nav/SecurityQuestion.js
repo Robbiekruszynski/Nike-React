@@ -20,8 +20,8 @@ function SecurityQuestion(props){
   return(
     <div>
       <form>
-        <p>click yes</p>
-        <button onClick={yes}>yes</button>
+        <button onClick={yes}>Click to enter name</button>
+        <p>After name entry, head over to Info to view / edit</p>
       </form>
     </div>
   )

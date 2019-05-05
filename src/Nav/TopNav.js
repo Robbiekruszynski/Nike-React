@@ -35,6 +35,7 @@ class TopNav extends React.Component {
   justify-content: flex-start;
   width: 100px;
   background-color: white;
+  text-decoration: none;
   `;
 
   const RightSide = styled.button`
@@ -58,8 +59,7 @@ class TopNav extends React.Component {
       <LeftSide onClick={this.props.onTextVisible}>Jordan</LeftSide>
       <LeftSide onClick={this.props.onTextVisible}>Hurley</LeftSide>
       <LeftSide onClick={this.props.onTextVisible}>Converse</LeftSide>
-      <Link to='/admin'>Admin</Link>
-      <Link to='/info'>Info</Link>
+      <LeftSide><Link to='/admin'>Admin</Link></LeftSide>
 
 
       <End>
